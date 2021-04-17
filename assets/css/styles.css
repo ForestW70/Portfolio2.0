@@ -1,3 +1,206 @@
-body {
+/* * {
     background-color: blanchedalmond;
+    border: 1px solid black;
+} */
+
+body {
+    background-color: #f7f5f2;
+}
+
+
+header > * {
+    /* border: 1px solid black; */
+}
+
+.header-disp {
+    /* border: 1px solid black; */
+    background-image: url(../images/maine2-crop.jpg);
+    z-index: 1;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 15vh;
+    margin: 0 auto 50px auto;
+    position: fixed;
+    top: 0;
+    right: 5vw;
+}
+
+.hello-i-am  {
+    display: inline;
+    position: absolute;
+    left: 90px;
+    bottom: 22px;
+
+    letter-spacing: 3px;
+    font-size: 70px;
+    line-height: 0;
+    font-family: 'Modak', cursive;
+    transform: scale(1.2, 1.5);
+    
+    
+    -webkit-text-fill-color: #f7f5f2; /* Will override color (regardless of order) */
+    /* -webkit-text-stroke-width: 1px; */
+    -webkit-text-stroke-color: #87999a;
+}
+
+.menu-items {
+    display:inline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #b5cfe199;
+    padding: 10px;
+    
+}
+
+.menu-items span {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    font-family: 'Martel', serif;
+}
+
+.nav-item-1 {
+    /* background-color: whitesmoke; */
+}
+
+.nav-item-2 {
+    /* background-color: rgb(216, 216, 236); */
+}
+.nav-item-3 {
+    /* background-color: rgb(210, 197, 241); */
+}
+.nav-item-4 {
+    /* background-color: rgb(145, 164, 219); */
+}
+
+
+.top-sec {
+    margin-top: 275px;
+    
+}
+
+.art-header {
+    -webkit-writing-mode: vertical-rl;
+    /* transform: rotate(180deg); */
+    margin: auto 0 0 0;
+    text-align: center;
+    padding: 0px;
+    font-size: 10vh;
+    font-weight: 100;
+}
+
+.art-meat {
+    margin: 0 auto;
+}
+
+.row {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.small-boxes > * {
+    height: 8vmax;
+    background-color: #c7dcec;
+}
+
+.small-boxes {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 2px;
+}
+
+.small-boxes div {
+    display: flex;
+}
+
+.small-boxes span {
+    color: #f7f5f2;
+    margin: auto;
+    font-size: 2.5rem;
+    opacity: 1;
+}
+
+.small-boxes p {
+    color: #f7f5f2;
+    margin: auto;
+    font-size: 2.2rem;
+    
+}
+
+.hover-on:hover {
+    /* box-shadow: 5px 5px black; */
+    opacity: 1;
+    display: inline;
+}
+
+
+.big-box {
+    height: 45vh;
+    width:100%;
+    margin-bottom: 2px;
+    background-color: #b5cfe1;
+    background-position: center;
+    background-size: cover;
+}
+
+.big-box h2 {
+    background-color: #ffffff80;
+    padding: 10px 0px;
+    margin-right: 600px;
+    text-indent: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.contact > * {
+    background-color: teal;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+.new-pic {
+    background-image: url(./maine2-crop.jpg);
+}
+
+@media only screen and (max-width: 900px) {
+    .hello-i-am {
+        display: block;
+        bottom: unset;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .small-boxes {
+        grid-template-columns: 2fr;
+    }
+    .art-header {
+        -webkit-writing-mode: unset;
+    } 
+    /* .row {
+        margin: 0 auto;
+    } */
+} 
+
+
+
+.sumcolors {
+    color: #d7e2e7;
+    color: #748c9c;
+    color: #4d545e;
+    color: #b5cfe1;
+    color: #8ea5b3;
+    color: #171b1e;
+    color: #a4b5bf;
+    color: #cbd2d4;
+    color: #c7dcec;
+
 }
