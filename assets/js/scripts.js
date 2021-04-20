@@ -1,4 +1,7 @@
 
+
+
+
 const projSquares = document.querySelectorAll(".title-cont");
 const bigDisp = document.getElementById("showCase");
 const topicButtons = document.querySelectorAll(".title-cont, .off, .hover-on")

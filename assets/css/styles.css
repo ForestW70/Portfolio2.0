@@ -12,26 +12,14 @@ header > * {
     /* border: 1px solid black; */
 }
 
-.header-disp {
-    /* border: 1px solid black; */
-    background-image: url(../images/maine2-crop.jpg);
-    z-index: 1;
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-    width: 90%;
-    height: 15vh;
-    margin: 0 auto 50px auto;
-    position: fixed;
-    top: 0;
-    right: 5vw;
-}
+
 
 .hello-i-am  {
     display: inline;
     position: absolute;
     left: 90px;
     bottom: 22px;
+    
 
     letter-spacing: 3px;
     font-size: 70px;
@@ -43,23 +31,62 @@ header > * {
     -webkit-text-fill-color: #f7f5f2; /* Will override color (regardless of order) */
     /* -webkit-text-stroke-width: 1px; */
     -webkit-text-stroke-color: #87999a;
-}
-
-.menu-items {
-    display:inline;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: #b5cfe199;
-    padding: 10px;
     
 }
 
+.menu-items {
+    /* display:inline;
+    position: absolute;
+    right: 0;
+    bottom: 0; */
+    background-color: #b5cfe199;
+    /* padding: 20px; */
+    border-radius: 3px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    position: sticky;
+    top: -100px;
+}
+
 .menu-items span {
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0 10px;
-    font-family: 'Martel', serif;
+    color: #f7f5f2;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    padding: 15px 15px;
+    font-family: math;
+    position: relative;
+    z-index: 1000;
+}
+
+#header-disp {
+    background-image: url(../images/maine2-crop.jpg);
+    z-index: -1;
+    
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 45vh;
+    margin: 0 auto 0px auto;
+    position: sticky;
+    top: -50px;
+    right: 5vw;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.head-room {
+    /* padding-bottom: 500px; */
+}
+
+.headSizeLarge {
+    height: 25vh;
+}
+
+.headSizeSmall {
+    height: 15vh;
 }
 
 .nav-item-1 {
@@ -157,11 +184,36 @@ header > * {
 
 
 .contact > * {
-    background-color: teal;
+    background-color: #b5cacdb8;
 }
 
 .hide {
     display: none;
+}
+
+.contact div {
+    padding: 0 0 400px 0;
+    margin: 5px auto;
+}
+
+.contact img {
+    height:75px;
+    width:75px;
+    opacity: .5;
+    margin: 3px auto;
+    
+}
+
+.contact span {
+    -webkit-writing-mode: vertical-rl;
+    display: block;
+    margin: 10px auto;
+    color: #f7f5f2;
+    letter-spacing: 3px;
+    /* line-height: 0; */
+    font-size: 3.6vmax;
+    font-family: sans-serif;
+    font-style: italic;
 }
 
 
