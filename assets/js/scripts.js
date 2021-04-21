@@ -4,8 +4,9 @@
 
 const projSquares = document.querySelectorAll(".title-cont");
 const bigDisp = document.getElementById("showCase");
+const projTitle = document.getElementById("projTitle");
 const topicButtons = document.querySelectorAll(".title-cont, .off, .hover-on")
-
+console.log("welcome");
 
 projSquares.forEach( (elem) => {
 
@@ -13,6 +14,7 @@ projSquares.forEach( (elem) => {
     elem.addEventListener("mouseenter", e => {
         e.target.firstElementChild.classList.add("hide");
         e.target.lastElementChild.classList.remove("hide");
+        console.log("yep");
     })
 
     elem.addEventListener("mouseleave", e => {
@@ -24,7 +26,9 @@ projSquares.forEach( (elem) => {
         let selecTopic = e.target.getAttribute("name");
         console.log(e.target)
         console.log(selecTopic);
-        displayBigBox(selecTopic)
+        bigDisp.style.backgroundImage = `url(./assets/images/${selecTopic}.png)`;
+        projTitle.innerText = `"${selecTopic}"`;
+        // displayBigBox(selecTopic)
     })
     
 

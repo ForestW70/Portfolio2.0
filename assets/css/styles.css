@@ -1,33 +1,38 @@
-/* * {
-    background-color: blanchedalmond;
-    border: 1px solid black;
-} */
-
 body {
     background-color: #f7f5f2;
 }
 
-
-header > * {
-    /* border: 1px solid black; */
+/* Landing header */
+header {
+    position: sticky;
+    top: -200px;
+    z-index: 999; 
 }
 
 
+/* .head-room {
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
+    position: sticky;
+    top: -200px;
+    z-index: 999;
+    pointer-events: none;
+} */
 
 .hello-i-am  {
-    display: inline;
+    
     position: absolute;
-    left: 90px;
-    bottom: 22px;
+    left: 75px;
+    bottom: 0px;
     
 
     letter-spacing: 3px;
     font-size: 70px;
-    line-height: 0;
+    line-height: 0.6;
     font-family: 'Modak', cursive;
     transform: scale(1.2, 1.5);
     
-    
+    color: #f7f5f2;
     -webkit-text-fill-color: #f7f5f2; /* Will override color (regardless of order) */
     /* -webkit-text-stroke-width: 1px; */
     -webkit-text-stroke-color: #87999a;
@@ -35,62 +40,56 @@ header > * {
 }
 
 .menu-items {
-    /* display:inline;
-    position: absolute;
-    right: 0;
-    bottom: 0; */
-    background-color: #b5cfe199;
-    /* padding: 20px; */
+    
     border-radius: 3px;
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
 
-    position: sticky;
-    top: -100px;
+    /* position: sticky;
+    top: -100px; */
+}
+
+.menu-items span:first-child {
+    padding: 10px 10px 10px 20px;
+}
+
+.menu-items span:last-child {
+    padding: 10px 20px 10px 10px;
 }
 
 .menu-items span {
     color: #f7f5f2;
-    font-size: 1.8rem;
+    background-color: #b5cfe199;
+    font-weight: bolder;
+    font-size: 1.5rem;
     letter-spacing: 3px;
-    padding: 15px 15px;
-    font-family: math;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
     position: relative;
-    z-index: 1000;
+    
 }
 
 #header-disp {
     background-image: url(../images/maine2-crop.jpg);
-    z-index: -1;
+    
     
     background-position: center;
     background-size: cover;
-    width: 90%;
+    
     height: 45vh;
-    margin: 0 auto 0px auto;
-    position: sticky;
-    top: -50px;
-    right: 5vw;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    
+    position: relative;
+   
 }
 
-.head-room {
-    /* padding-bottom: 500px; */
-}
-
-.headSizeLarge {
-    height: 25vh;
-}
-
-.headSizeSmall {
-    height: 15vh;
-}
 
 .nav-item-1 {
     /* background-color: whitesmoke; */
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    padding-left: 15px;
 }
 
 .nav-item-2 {
@@ -101,17 +100,20 @@ header > * {
 }
 .nav-item-4 {
     /* background-color: rgb(145, 164, 219); */
+    border-bottom-right-radius: 3px;
+    padding-right: 15px;
 }
 
 
-.top-sec {
-    margin-top: 275px;
-    
-}
 
+
+
+
+
+/* main section */
 .art-header {
+    writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
-    /* transform: rotate(180deg); */
     margin: auto 0 0 0;
     text-align: center;
     padding: 0px;
@@ -126,6 +128,27 @@ header > * {
 .row {
     width: 80%;
     margin: 30px auto;
+}
+
+.big-box {
+    height: 45vh;
+    width:100%;
+    margin-bottom: 2px;
+    background-color: #b5cfe1;
+    background-position: center;
+    background-size: cover;
+}
+
+.art-meat h2 {
+    background-color: #b5cfe1;
+    padding: 10px 0px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.ital {
+    font-style: italic;
 }
 
 .small-boxes > * {
@@ -157,39 +180,18 @@ header > * {
     
 }
 
-.hover-on:hover {
-    /* box-shadow: 5px 5px black; */
-    opacity: 1;
-    display: inline;
+.hide {
+    display: none;
 }
 
 
-.big-box {
-    height: 45vh;
-    width:100%;
-    margin-bottom: 2px;
-    background-color: #b5cfe1;
-    background-position: center;
-    background-size: cover;
-}
 
-.big-box h2 {
-    background-color: #ffffff80;
-    padding: 10px 0px;
-    margin-right: 600px;
-    text-indent: 30px;
-    text-align: center;
-    color: #fff;
-}
 
 
 .contact > * {
     background-color: #b5cacdb8;
 }
 
-.hide {
-    display: none;
-}
 
 .contact div {
     padding: 0 0 400px 0;
@@ -217,24 +219,46 @@ header > * {
 }
 
 
-
-
-.new-pic {
-    background-image: url(./maine2-crop.jpg);
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #b9b5b5;
+    padding: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+footer a, footer span {
+    font-size: 8px;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+footer h6 {
+    padding-right: 5px;
+}
+
+
+
+
+/* screen events */
+
+@media olny screen and (max-width: 1300px) {
+    /* navbar comes in and helloiam needs to pop to the top */
+}
+
+/* @media only screen and (max-width: 900px) {
     .hello-i-am {
         display: block;
         bottom: unset;
     }
-}
+} */
 
 @media only screen and (max-width: 767px) {
     .small-boxes {
         grid-template-columns: 2fr;
     }
     .art-header {
+        writing-mode: unset;
         -webkit-writing-mode: unset;
     } 
     /* .row {
@@ -244,6 +268,8 @@ header > * {
 
 
 
+
+/* ref */
 .sumcolors {
     color: #d7e2e7;
     color: #748c9c;
@@ -255,4 +281,12 @@ header > * {
     color: #cbd2d4;
     color: #c7dcec;
 
+}
+
+.sumfonts {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
