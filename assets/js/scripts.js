@@ -5,6 +5,7 @@
 const projSquares = document.querySelectorAll(".title-cont");
 const bigDisp = document.getElementById("showCase");
 const projTitle = document.getElementById("projTitle");
+const projLink = document.getElementById("projLink");
 const topicButtons = document.querySelectorAll(".title-cont, .off, .hover-on")
 console.log("welcome");
 
@@ -24,10 +25,11 @@ projSquares.forEach( (elem) => {
 
     elem.lastElementChild.addEventListener("click", e => {
         let selecTopic = e.target.getAttribute("name");
-        console.log(e.target)
-        console.log(selecTopic);
+        let descrip = e.target.dataset.descrip;
+        let link = e.target.dataset.link;
         bigDisp.style.backgroundImage = `url(./assets/images/${selecTopic}.png)`;
-        projTitle.innerText = `"${selecTopic}"`;
+        projTitle.innerText = `"${descrip}"`;
+        projLink.href = link;
         // displayBigBox(selecTopic)
     })
     

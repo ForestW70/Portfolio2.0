@@ -10,25 +10,20 @@ header {
 }
 
 
-/* .head-room {
-    padding-bottom: 1000px;
-    margin-bottom: -1000px;
-    position: sticky;
-    top: -200px;
-    z-index: 999;
-    pointer-events: none;
-} */
+.head-room {
+    margin-top: 150px;
+}
 
 .hello-i-am  {
     
     position: absolute;
-    left: 75px;
+    left: 100px;
     bottom: 0px;
     
 
-    letter-spacing: 3px;
-    font-size: 70px;
-    line-height: 0.6;
+    letter-spacing: 4px;
+    font-size: 80px;
+    line-height: 0.7;
     font-family: 'Modak', cursive;
     transform: scale(1.2, 1.5);
     
@@ -59,15 +54,17 @@ header {
     padding: 10px 20px 10px 10px;
 }
 
-.menu-items span {
+.menu-items a {
+    text-decoration: none;
     color: #f7f5f2;
-    background-color: #b5cfe199;
+    background-color: #b5cfe1;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 3px;
     padding: 10px;
     font-family: 'Work Sans', sans-serif;
     position: relative;
+    line-height: .4;
     
 }
 
@@ -88,7 +85,6 @@ header {
 .nav-item-1 {
     /* background-color: whitesmoke; */
     border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
     padding-left: 15px;
 }
 
@@ -106,18 +102,23 @@ header {
 
 
 
-
-
-
-
 /* main section */
 .art-header {
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
-    margin: auto 0 0 0;
+    margin: 150px 0 0 0;
     text-align: center;
     padding: 0px;
-    font-size: 10vh;
+    font-size: 12vh;
+    font-weight: 100;
+}
+
+.poster {
+    writing-mode: unset;
+    margin: 100px 0;
+    text-align: center;
+    padding: 0px;
+    font-size: 12vh;
     font-weight: 100;
 }
 
@@ -125,9 +126,24 @@ header {
     margin: 0 auto;
 }
 
+.about p {
+    text-indent: 40px;
+    font-weight: 300;
+    font-size: 22px;
+
+}
+
+.about p:last-child {
+    margin-top:50px;
+    font-style: italic;
+    font-weight: 200
+}
+
+
+
 .row {
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .big-box {
@@ -137,14 +153,19 @@ header {
     background-color: #b5cfe1;
     background-position: center;
     background-size: cover;
+    background-image: url(../images/nasa-app.png);
 }
 
 .art-meat h2 {
-    background-color: #b5cfe1;
+    
     padding: 10px 0px;
     margin-bottom: 0;
     text-align: center;
-    color: #fff;
+    color: #171b1e;
+}
+
+#projTitle{
+    margin-top: 150px;
 }
 
 .ital {
@@ -169,14 +190,14 @@ header {
 .small-boxes span {
     color: #f7f5f2;
     margin: auto;
-    font-size: 2.5rem;
+    font-size: 4vmax;
     opacity: 1;
 }
 
 .small-boxes p {
     color: #f7f5f2;
     margin: auto;
-    font-size: 2.2rem;
+    font-size: 3vmax;
     
 }
 
@@ -194,17 +215,18 @@ header {
 
 
 .contact div {
-    padding: 0 0 400px 0;
-    margin: 5px auto;
+    padding: 0 0 1000px 0;
+    margin: 5px auto 0 auto;
 }
 
 .contact img {
     height:75px;
     width:75px;
-    opacity: .5;
-    margin: 3px auto;
-    
+    opacity: .2;
+    margin: 10px auto 10px 5px;
 }
+    
+
 
 .contact span {
     -webkit-writing-mode: vertical-rl;
@@ -223,27 +245,35 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    background-color: #b9b5b5;
+    background-color: #4d545e;
     padding: 10px;
 }
 
-footer a, footer span {
-    font-size: 8px;
+footer span {
+    font-size: 7px;
     padding: 0 5px;
     vertical-align: middle;
+    
 }
 
-footer h6 {
-    padding-right: 5px;
-}
 
 
 
 
 /* screen events */
 
-@media olny screen and (max-width: 1300px) {
-    /* navbar comes in and helloiam needs to pop to the top */
+@media only screen and (max-width: 420px) {
+    .menu-items {
+        justify-content: center;
+    }
+    .menu-items a {
+        line-height: 1;
+        font-size: 1.7vmax;
+        padding: 10px;
+    } 
+    .poster {
+        margin-bottom: 0px;
+    }
 }
 
 /* @media only screen and (max-width: 900px) {
@@ -260,10 +290,23 @@ footer h6 {
     .art-header {
         writing-mode: unset;
         -webkit-writing-mode: unset;
+        margin: 150px 0 -100px 0;
     } 
-    /* .row {
-        margin: 0 auto;
-    } */
+    /* shoutout @chipcullen on stackoverflow for helping me figure out how to center this */
+    .hello-i-am {
+        position: absolute;
+        width: 100%;
+        left: 22%;
+        margin-left: -42px;
+        font-size: 10.5vw;
+        margin-bottom: 20px;
+    }
+    .contact img {
+        height:30px;
+        width:30px;
+        opacity: .2;
+        margin: 0;
+    }
 } 
 
 
