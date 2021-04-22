@@ -2,6 +2,10 @@ body {
     background-color: #f7f5f2;
 }
 
+
+
+/*  */
+/*  */
 /* Landing header */
 header {
     position: sticky;
@@ -9,49 +13,35 @@ header {
     z-index: 999; 
 }
 
-
-.head-room {
-    margin-top: 150px;
-}
-
 .hello-i-am  {
-    
     position: absolute;
     left: 100px;
     bottom: 0px;
     
-
     letter-spacing: 4px;
     font-size: 80px;
     line-height: 0.7;
     font-family: 'Modak', cursive;
     transform: scale(1.2, 1.5);
-    
     color: #f7f5f2;
-    -webkit-text-fill-color: #f7f5f2; /* Will override color (regardless of order) */
-    /* -webkit-text-stroke-width: 1px; */
-    -webkit-text-stroke-color: #87999a;
-    
 }
 
 .menu-items {
-    
     border-radius: 3px;
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-
-    /* position: sticky;
-    top: -100px; */
 }
 
-.menu-items span:first-child {
-    padding: 10px 10px 10px 20px;
+.menu-items a:first-child {
+    padding: 10px 10px 10px 25px;
+    border-bottom-left-radius: 3px;
 }
 
-.menu-items span:last-child {
-    padding: 10px 20px 10px 10px;
+.menu-items a:last-child {
+    padding: 10px 25px 10px 10px;
+    border-bottom-right-radius: 3px;
 }
 
 .menu-items a {
@@ -64,44 +54,22 @@ header {
     padding: 10px;
     font-family: 'Work Sans', sans-serif;
     position: relative;
-    line-height: .4;
-    
+    line-height: .4;  
 }
 
 #header-disp {
     background-image: url(../images/maine2-crop.jpg);
-    
-    
     background-position: center;
     background-size: cover;
-    
     height: 45vh;
-    
     position: relative;
-   
-}
-
-
-.nav-item-1 {
-    /* background-color: whitesmoke; */
-    border-bottom-left-radius: 3px;
-    padding-left: 15px;
-}
-
-.nav-item-2 {
-    /* background-color: rgb(216, 216, 236); */
-}
-.nav-item-3 {
-    /* background-color: rgb(210, 197, 241); */
-}
-.nav-item-4 {
-    /* background-color: rgb(145, 164, 219); */
-    border-bottom-right-radius: 3px;
-    padding-right: 15px;
 }
 
 
 
+
+/*  */
+/*  */
 /* main section */
 .art-header {
     writing-mode: vertical-rl;
@@ -113,37 +81,27 @@ header {
     font-weight: 100;
 }
 
-.poster {
-    writing-mode: unset;
-    margin: 100px 0;
-    text-align: center;
-    padding: 0px;
-    font-size: 12vh;
-    font-weight: 100;
-}
-
 .art-meat {
     margin: 0 auto;
+}
+
+.art-meat h2 {
+    padding: 10px 0px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #171b1e;
 }
 
 .about p {
     text-indent: 40px;
     font-weight: 300;
     font-size: 22px;
-
 }
 
 .about p:last-child {
     margin-top:50px;
     font-style: italic;
     font-weight: 200
-}
-
-
-
-.row {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .big-box {
@@ -156,24 +114,12 @@ header {
     background-image: url(../images/nasa-app.png);
 }
 
-.art-meat h2 {
-    
-    padding: 10px 0px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #171b1e;
-}
-
 #projTitle{
     margin-top: 150px;
 }
 
-.ital {
-    font-style: italic;
-}
-
 .small-boxes > * {
-    height: 8vmax;
+    height: 5vmax;
     background-color: #c7dcec;
 }
 
@@ -190,24 +136,23 @@ header {
 .small-boxes span {
     color: #f7f5f2;
     margin: auto;
-    font-size: 4vmax;
-    opacity: 1;
+    font-size: 3vmax;
 }
 
 .small-boxes p {
     color: #f7f5f2;
     margin: auto;
     font-size: 3vmax;
-    
 }
 
-.hide {
-    display: none;
+.poster {
+    writing-mode: unset;
+    margin: 100px 0;
+    text-align: center;
+    padding: 0px;
+    font-size: 12vh;
+    font-weight: 100;
 }
-
-
-
-
 
 .contact > * {
     background-color: #b5cacdb8;
@@ -226,15 +171,13 @@ header {
     margin: 10px auto 10px 5px;
 }
     
-
-
 .contact span {
+    writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
     display: block;
     margin: 10px auto;
     color: #f7f5f2;
     letter-spacing: 3px;
-    /* line-height: 0; */
     font-size: 3.6vmax;
     font-family: sans-serif;
     font-style: italic;
@@ -253,36 +196,32 @@ footer span {
     font-size: 7px;
     padding: 0 5px;
     vertical-align: middle;
-    
+}
+
+
+/* utility */
+.head-room {
+    margin-top: 150px;
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.hide {
+    display: none;
 }
 
 
 
-
-
-/* screen events */
-
-@media only screen and (max-width: 420px) {
-    .menu-items {
-        justify-content: center;
-    }
-    .menu-items a {
-        line-height: 1;
-        font-size: 1.7vmax;
-        padding: 10px;
-    } 
-    .poster {
-        margin-bottom: 0px;
-    }
-}
-
-/* @media only screen and (max-width: 900px) {
-    .hello-i-am {
-        display: block;
-        bottom: unset;
-    }
-} */
-
+/*  */
+/*  */
+/* screen event: column break */
 @media only screen and (max-width: 767px) {
     .small-boxes {
         grid-template-columns: 2fr;
@@ -292,6 +231,7 @@ footer span {
         -webkit-writing-mode: unset;
         margin: 150px 0 -100px 0;
     } 
+
     /* shoutout @chipcullen on stackoverflow for helping me figure out how to center this */
     .hello-i-am {
         position: absolute;
@@ -308,6 +248,22 @@ footer span {
         margin: 0;
     }
 } 
+
+/* screen event: phone */
+@media only screen and (max-width: 420px) {
+    .menu-items {
+        justify-content: center;
+    }
+    .menu-items a {
+        line-height: 1;
+        font-size: 1.7vmax;
+        padding: 10px;
+    } 
+    .poster {
+        margin-bottom: 0px;
+    }
+}
+
 
 
 
