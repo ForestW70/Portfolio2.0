@@ -20,6 +20,7 @@ projSquares.forEach( (elem) => {
     })
 
     // click event
+    // dataset refernces the data attributes given to target divs.
     elem.lastElementChild.addEventListener("click", e => {
         let selecTopic = e.target.getAttribute("name");
         let descrip = e.target.dataset.descrip;
